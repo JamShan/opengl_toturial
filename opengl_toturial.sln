@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gl_2d_tutorial", "projects\gl_2d_tutorial.vcproj", "{5C7A0D80-2EEB-4DF4-8EB9-2C74F42F3EE7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gl_sun_earth_moon", "projects\gl_sun_earth_moon.vcproj", "{2BFE6B17-44FF-4F92-B830-2A1C1045DFFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +15,10 @@ Global
 		{5C7A0D80-2EEB-4DF4-8EB9-2C74F42F3EE7}.Debug|Win32.Build.0 = Debug|Win32
 		{5C7A0D80-2EEB-4DF4-8EB9-2C74F42F3EE7}.Release|Win32.ActiveCfg = Release|Win32
 		{5C7A0D80-2EEB-4DF4-8EB9-2C74F42F3EE7}.Release|Win32.Build.0 = Release|Win32
+		{2BFE6B17-44FF-4F92-B830-2A1C1045DFFF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2BFE6B17-44FF-4F92-B830-2A1C1045DFFF}.Debug|Win32.Build.0 = Debug|Win32
+		{2BFE6B17-44FF-4F92-B830-2A1C1045DFFF}.Release|Win32.ActiveCfg = Release|Win32
+		{2BFE6B17-44FF-4F92-B830-2A1C1045DFFF}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
