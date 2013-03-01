@@ -5,6 +5,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gl_2d_tutorial", "projects\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gl_sun_earth_moon", "projects\gl_sun_earth_moon.vcproj", "{2BFE6B17-44FF-4F92-B830-2A1C1045DFFF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gl_3d_navigation", "projects\gl_3d_navigation.vcproj", "{10DCE14A-20D4-49CB-895A-6BD9B8E1A1C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -19,6 +21,10 @@ Global
 		{2BFE6B17-44FF-4F92-B830-2A1C1045DFFF}.Debug|Win32.Build.0 = Debug|Win32
 		{2BFE6B17-44FF-4F92-B830-2A1C1045DFFF}.Release|Win32.ActiveCfg = Release|Win32
 		{2BFE6B17-44FF-4F92-B830-2A1C1045DFFF}.Release|Win32.Build.0 = Release|Win32
+		{10DCE14A-20D4-49CB-895A-6BD9B8E1A1C4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{10DCE14A-20D4-49CB-895A-6BD9B8E1A1C4}.Debug|Win32.Build.0 = Debug|Win32
+		{10DCE14A-20D4-49CB-895A-6BD9B8E1A1C4}.Release|Win32.ActiveCfg = Release|Win32
+		{10DCE14A-20D4-49CB-895A-6BD9B8E1A1C4}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
