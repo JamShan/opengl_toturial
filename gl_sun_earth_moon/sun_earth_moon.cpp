@@ -1,4 +1,6 @@
 #include <Windows.h>
+#include <time.h>
+#include <stdio.h>
 #include "glut/glut.h"
 
 #pragma comment(lib, "glut.lib")
@@ -6,11 +8,23 @@
 static int day = 10;
 static int frame = 0;
 
+// #define SINGLE_MODE
+
 void mydisplay();
 void dayafterday()
 {
 	do 
 	{
+		while(frame++ == 1)
+		{
+			frame = 0;
+			day++;
+
+
+			if(day == 361)
+				day = 1;
+		}
+
 		mydisplay();
 
 		Sleep(500);
@@ -18,17 +32,41 @@ void dayafterday()
 	} while (true);
 }
 
+void displaywhenidle()
+{
+	day++;
+	if(day==360)
+		day = 1;
+
+	mydisplay();
+}
+
+double calfrequence()
+{
+	static int count = 0;
+	static double fps = 0;
+	static clock_t last = 0, current = clock();
+	double timegap = 0;
+
+	if(count++ <= 50)
+		return fps;
+
+	count = 0;
+
+	last = current;
+	current = clock();
+	timegap = (current - last)/(double)CLK_TCK;
+	fps = 50.0/timegap;
+
+	return fps;
+}
+
 void mydisplay()
 {
-	while(frame++ == 1)
-	{
-		frame = 0;
-		day++;
-
-
-		if(day == 361)
-			day = 1;
-	}
+#ifndef SINGLE_MODE
+	double fps = calfrequence();
+	printf("FPS: %f\n", fps);
+#endif
 
 	// ÉèÖÃÊÓ¿Ú
 	glViewport(0, 200, 200, 200);
@@ -82,16 +120,23 @@ void mydisplay()
 	//glTranslatef(38000000, 0.0f, 0.0f);
 	//glutSolidSphere(4345000, 20, 20);
 
-
 	glFlush();
+
+#ifndef SINGLE_MODE
+	glutSwapBuffers();
+#endif
 }
 
 int main(int argc, char *args[])
 {
 	glutInit(&argc, args);
 
-
+#ifdef SINGLE_MODE
 	glutInitDisplayMode(GLUT_RGB | GLUT_SINGLE);
+#else
+	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
+#endif
+
 
 	glutInitWindowPosition(100, 100);
 
@@ -110,7 +155,13 @@ int main(int argc, char *args[])
 	glDepthFunc(GL_LEQUAL);
 	glClearDepth(1.0f);
 
+#ifdef SINGLE_MODE
 	glutDisplayFunc(&dayafterday);
+#else
+	glutDisplayFunc(&mydisplay);
+	glutIdleFunc(&displaywhenidle);
+#endif
+
 
 	glutMainLoop();
 
