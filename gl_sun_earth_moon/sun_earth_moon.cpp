@@ -66,6 +66,9 @@ void mydisplay()
 #ifndef SINGLE_MODE
 	double fps = calfrequence();
 	printf("FPS: %f\n", fps);
+
+	// 在垂直同步关闭的情况下，帧率非常高，可达1000
+	// 开启垂直同步：ati显卡，安装ati显卡控制中心，打开ati控制中心-3d-所有设置->垂直同步！
 #endif
 
 	// 设置视口
