@@ -91,6 +91,15 @@ void myDisplay(void)
 		glutSolidSphere(1.0, 40, 32);
 	}
 
+	/*
+	光照模型包括四个部分的内容：全局环境光线（即那些充分散射，无法分清究竟来自哪个光源的光线）的强度、观察点位置是在较近位置还是在无限远处、物体正面与背面是否分别计算光照、镜面颜色（即GL_SPECULAR属性所指定的颜色)的计算是否从其它光照计算中分离出来，并在纹理操作以后在进行应用。
+	以上四方面的内容都通过同一个函数glLightModel*来进行设置
+	GL_LIGHT_MODEL_AMBIENT表示全局环境光线强度，由四个值组成。
+	GL_LIGHT_MODEL_LOCAL_VIEWER表示是否在近处观看，若是则设置为GL_TRUE，否则（即在无限远处观看）设置为GL_FALSE。
+	GL_LIGHT_MODEL_TWO_SIDE表示是否执行双面光照计算。如果设置为GL_TRUE，则OpenGL不仅将根据法线向量计算正面的光照，也会将法线向量反转并计算背面的光照。
+	GL_LIGHT_MODEL_COLOR_CONTROL表示颜色计算方式。如果设置为GL_SINGLE_COLOR，表示按通常顺序操作，先计算光照，再计算纹理。如果设置为GL_SEPARATE_SPECULAR_COLOR，表示将GL_SPECULAR属性分离出来，先计算光照的其它部分，待纹理操作完成后再计算GL_SPECULAR。后者通常可以使画面效果更为逼真（当然，如果本身就没有执行任何纹理操作，这样的分离就没有任何意义）。
+	*/
+
 	glutSwapBuffers();
 }
 void myIdle(void)
