@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gl_3d_navigation", "project
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gl_light", "projects\gl_light.vcproj", "{58BA041C-6895-4EBF-B7BC-AD320EAB21CF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sgl_lib", "projects\sgl_lib.vcproj", "{A440E046-2CEB-4A4A-BD78-9DAEB3830BC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -31,6 +33,10 @@ Global
 		{58BA041C-6895-4EBF-B7BC-AD320EAB21CF}.Debug|Win32.Build.0 = Debug|Win32
 		{58BA041C-6895-4EBF-B7BC-AD320EAB21CF}.Release|Win32.ActiveCfg = Release|Win32
 		{58BA041C-6895-4EBF-B7BC-AD320EAB21CF}.Release|Win32.Build.0 = Release|Win32
+		{A440E046-2CEB-4A4A-BD78-9DAEB3830BC2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A440E046-2CEB-4A4A-BD78-9DAEB3830BC2}.Debug|Win32.Build.0 = Debug|Win32
+		{A440E046-2CEB-4A4A-BD78-9DAEB3830BC2}.Release|Win32.ActiveCfg = Release|Win32
+		{A440E046-2CEB-4A4A-BD78-9DAEB3830BC2}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

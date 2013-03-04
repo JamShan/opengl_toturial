@@ -3,7 +3,12 @@
 #include <stdio.h>
 #include "glut/glut.h"
 
+#define USE_SIMPLE_GL_LIB 1
+#include "../sgl_lib/sgl.h"
+
 #pragma comment(lib, "glut.lib")
+
+#pragma comment(lib, "sgl_lib.lib")
 
 static int day = 10;
 static int frame = 0;
@@ -64,7 +69,15 @@ double calfrequence()
 void mydisplay()
 {
 #ifndef SINGLE_MODE
-	double fps = calfrequence();
+
+	double fps = 0;
+	
+#if USE_SIMPLE_GL_LIB
+	fps = cal_fps();
+#else
+	fps = calfrequence();
+#endif
+
 	printf("FPS: %f\n", fps);
 
 	// 在垂直同步关闭的情况下，帧率非常高，可达1000
