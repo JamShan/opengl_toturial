@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sgl_lib", "projects\sgl_lib
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gl_blend", "projects\gl_blend.vcproj", "{9B83E2D8-6C26-4EC0-A601-76F2393D6E5D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gl_texture", "projects\gl_texture.vcproj", "{34D66A12-F304-4E52-B5F4-E2BF8412053B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -43,6 +45,10 @@ Global
 		{9B83E2D8-6C26-4EC0-A601-76F2393D6E5D}.Debug|Win32.Build.0 = Debug|Win32
 		{9B83E2D8-6C26-4EC0-A601-76F2393D6E5D}.Release|Win32.ActiveCfg = Release|Win32
 		{9B83E2D8-6C26-4EC0-A601-76F2393D6E5D}.Release|Win32.Build.0 = Release|Win32
+		{34D66A12-F304-4E52-B5F4-E2BF8412053B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{34D66A12-F304-4E52-B5F4-E2BF8412053B}.Debug|Win32.Build.0 = Debug|Win32
+		{34D66A12-F304-4E52-B5F4-E2BF8412053B}.Release|Win32.ActiveCfg = Release|Win32
+		{34D66A12-F304-4E52-B5F4-E2BF8412053B}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
