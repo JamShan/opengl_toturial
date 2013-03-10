@@ -140,6 +140,7 @@ void mydisplay()
 
 #ifndef SINGLE_MODE
 	glutSwapBuffers();
+	grab(0,0,400,400);
 #endif
 }
 
