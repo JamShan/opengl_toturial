@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gl_blend", "projects\gl_ble
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gl_texture", "projects\gl_texture.vcproj", "{34D66A12-F304-4E52-B5F4-E2BF8412053B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gl_pixelop", "projects\gl_pixelop.vcproj", "{C1A15FDA-3802-45FA-945F-A3883450D415}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -49,6 +51,10 @@ Global
 		{34D66A12-F304-4E52-B5F4-E2BF8412053B}.Debug|Win32.Build.0 = Debug|Win32
 		{34D66A12-F304-4E52-B5F4-E2BF8412053B}.Release|Win32.ActiveCfg = Release|Win32
 		{34D66A12-F304-4E52-B5F4-E2BF8412053B}.Release|Win32.Build.0 = Release|Win32
+		{C1A15FDA-3802-45FA-945F-A3883450D415}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C1A15FDA-3802-45FA-945F-A3883450D415}.Debug|Win32.Build.0 = Debug|Win32
+		{C1A15FDA-3802-45FA-945F-A3883450D415}.Release|Win32.ActiveCfg = Release|Win32
+		{C1A15FDA-3802-45FA-945F-A3883450D415}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
